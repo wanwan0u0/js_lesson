@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+#header.container{
+      background-color: #000;
+  }
+  header nav img{
+      width: 80px;
+  }
+  header li{
+      margin: 0 10px;
+  }
+#background-section {
+    background-image: url('header圖.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 70px
+  }
+  .container {
+    max-width: 1px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+  }
+  
+  .ticket-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transform-origin: right;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+  }
+  
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-group input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group button {
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(109,71,55);
+    color: rgb(247,247,237);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

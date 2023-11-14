@@ -1,0 +1,108 @@
+ body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background-color: rgb(248, 244, 244);
+            margin-left: 20px;
+            margin-top: 75px;
+}
+        
+        .artist {
+            
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            margin-left: 15px;
+            border-radius: 15px;
+            position: relative;
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+            
+        }
+        
+        .artist h2 {
+            margin: 0;
+            font-size: 25px;
+            text-decoration: none;
+            color:#000000;
+        }
+        
+        .artist p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .artist .avatar {
+            border: 2px solid #603408;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-size: cover;
+            margin-top: -70px;
+            vertical-align: middle;
+            margin-left: 110px;
+            margin-bottom: 30px;
+        }
+        .artwork {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        
+        .artwork img {
+            width: 320px;
+            height: 250px;
+            object-fit: cover;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            border-radius: 10px;
+        }
+        .clear {
+            clear: both;
+        }
+        h1{
+            text-align: center;
+        }
+        #header.container{
+            background-color: #000;
+        }
+        header {
+            display: flex;
+            padding: 1px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+        
+          /* 品牌樣式 */
+        header img {
+            height: 90px; /* 品牌圖片的高度 */
+            width: 80px; /* 自動調整品牌圖片的寬度 */
+            margin-right: 10px; /* 品牌圖片右邊的間距 */
+        }
+        
+        header nav img{
+            width: 90px;
+            height: 50px;
+          
+        }
+        header li{
+            margin: 0 10px;
+            position: sticky;
+            top: 0;
+            
+        }
+          .back button{
+            background-color: rgb(109,71,55);
+            padding: 10px 20px;
+            color: #fff;
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+            width: 150px;
+          }

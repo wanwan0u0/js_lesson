@@ -1,0 +1,389 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-decoration: none; /* 移除預設文字底線 */
+    }
+
+    header nav a h1{
+        font-weight: bold;
+        color: white; /* 導航項目文字顏色 */
+        text-decoration: none; /* 移除預設文字底線 */
+    }
+#header.container{
+    background-color: #000;
+}
+
+header li{
+    margin: 0 10px;
+}
+
+header text {
+    margin: 10px 10px;
+    color:white;
+}
+
+header text a{
+    color:white;
+    text-decoration: none;
+}
+
+header .profile .c text{
+    color:white;
+    font-size:medium;
+    margin:10px;  
+    padding-top: 0px; 
+    margin-left: 12px;
+}
+
+header .profile{
+    margin: 0px 0px 0px 1000px;
+    color:white;
+}
+
+.profile .c .round_icon2{
+    margin-left:0px;
+    margin-TOP:10px;
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.title {
+    padding: 10px;
+    cursor: pointer;
+}
+#user-profile{
+    padding: 100px;
+    display: flex;
+    padding-bottom: 0px;
+}
+.left-section {
+    width: 30%;
+    height: 600px;
+  }
+  
+.right-section {
+    width: 70%;
+    background-color: #e1e1e1;
+    border-radius: 20px;
+    height:400px;
+}
+
+.whole{
+    width: 100%;
+    height: 30px;
+    padding-bottom: 20px;
+}
+
+.whole .left {
+    width: 50%;
+    height: 0px;
+  }
+  
+.whole .right {
+    width: 50%;
+    height:30px;
+    margin-left: 770px;
+}
+
+
+.c{
+    margin:-10px;  
+    padding-top: 0px; 
+    margin-left: -12px;
+    margin-bottom: 8px;
+
+}
+
+.c img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    flex: 0 0 auto;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    scroll-snap-align: start;
+}
+.c1 img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    flex: 0 0 auto;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    scroll-snap-align: start;
+    margin-right: 235px;
+}
+.c img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.c1 img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* 導航欄整體樣式 */
+.navbar {
+    padding: 10px; /* 上下左右的內邊距 */
+}
+  
+  /* 品牌樣式 */
+.navbar-brand img {
+    height: 40px; /* 品牌圖片的高度 */
+    width: 80px; /* 自動調整品牌圖片的寬度 */
+    margin-right: 10px; /* 品牌圖片右邊的間距 */
+}
+  
+/* 導航項目樣式 */
+.navbar-nav .nav-item {
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+}
+  
+  /* 導航項目文字樣式 */
+.navbar-nav .nav-item .title {
+    padding: 10px;
+    font-weight: bold;
+    color: white; /* 導航項目文字顏色 */
+    text-decoration: none; /* 移除預設文字底線 */
+}
+  
+  /* 子導航樣式 */
+.sub-nav {
+    display: none; /* 初始隱藏子導航 */
+    position: absolute;
+    top: 100%; /* 子導航相對於導航項目的位置 */
+    left: 0;
+    background-color: #f8f9fa; /* 子導航背景顏色 */
+    padding: 0;
+    list-style-type: none; /* 移除子導航的預設樣式 */
+    z-index: 1; /* 確保子導航在頂層 */
+}
+  
+  /* 滑鼠移入導航項目時顯示子導航 */
+.navbar-nav .nav-item:hover .sub-nav {
+    display: block;
+}
+  
+  /* 子導航項目樣式 */
+.sub-nav li {
+    margin-bottom:auto;
+}
+  
+  /* 子導航項目文字樣式 */
+.sub-nav li a {
+    color: #333; /* 子導航項目文字顏色 */
+    text-decoration: none; /* 移除預設文字底線 */
+}
+  
+  /* 購物車連結樣式 */
+.navbar-nav .nav-item .title a {
+    color: white; /* 購物車連結文字顏色 */
+    text-decoration: none; /* 移除預設文字底線 */
+    margin: auto;
+}
+  
+p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 20px;
+    
+}
+
+.col-sm-3 button{
+    width: 100px;
+    padding: 8px;
+    background-color: #000;
+    color: rgb(247,247,237);
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.col-sm-3 a{
+    text-decoration: none;
+    color: rgb(247,247,237);
+}
+.col-sm-3 {
+    padding-left: 30px;
+}
+
+.c .round_icon{
+    width:200px;
+    height:200px;
+    border-radius:100%;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.c1 .round_icon2{
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+.homepage{
+    display: block;
+    padding-top: 120px;
+}
+
+.homepage text{
+    margin:0px 20px 0px 0px;
+ }
+
+ .homepage img{
+    margin:0px 0px 0px 0px;
+ }
+
+ .homepage .float{
+    float: right;
+ }
+
+.collect{
+    display:inline-block;
+    text-align:center;
+    width:300px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin:20px 50px 20px 100px;
+}
+.block{
+    width: 1600px;
+    height: 400px;
+}
+
+.block img{
+    width: 1600px;
+    height: 450px;
+}
+  
+.artist-bio {
+    text-align: center;
+    padding: 20px;
+}
+.left-section b{
+    padding-top: 20px;
+}
+.right-section .edit{
+    padding-top: 0px;
+    padding-left: 770px;
+}
+.button1 {
+    margin-top: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e1e1e1;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+.button1:hover {
+    background-color: #999;
+  }
+.right-section .bio{
+    padding: 40px;
+    height: 175px;
+    
+}
+#artcollect .row{
+    width: 1960px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 65px;
+    padding-top: 60px;
+}
+#artcollect{
+    padding: 0px;
+    padding-left: 0px;
+}
+#artcollect button{
+    width: 100px;
+    padding: 8px;
+    background-color: #000;
+    color: rgb(247,247,237);
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#user-profile font{
+    color: #000;
+}
+#artcollect a{
+    text-decoration: none;
+}
+#artcollect .content{
+    background-color: #e1e1e1;
+    padding-bottom: 50px;
+}
+.artwork-container {
+    border: 1px solid #000;
+    padding:6px;
+    display: inline-block;
+    border-radius: 15px;
+    margin-left: 12px;
+    background: #eae7e7;
+  }
+.word{
+    margin-top: -35px;
+}
+.artwork-box {
+    border: 1px solid #000;
+    padding: 0px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+    border-radius: 15px;
+    background: #eae7e7;
+    
+  }
+  
+  .artwork-title {
+    font-weight: bold;
+  }
+
+  

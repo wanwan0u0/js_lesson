@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#header.container{
+    background-color: #000;
+}
+
+  /* 品牌樣式 */
+header img {
+    height: 40px; /* 品牌圖片的高度 */
+    width: 80px; /* 自動調整品牌圖片的寬度 */
+    margin-right: 10px; /* 品牌圖片右邊的間距 */
+}
+
+header li{
+    color:aliceblue;
+    margin: 0 10px;
+    position: relative;    
+    display: inline-block;
+    padding-left: 80%;
+    text-decoration: none; /* 移除預設文字底線 */
+}
+
+img{
+    flex: 0 0 auto;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    scroll-snap-align: start;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul{
+    padding-top: 100px;
+    display: flex;
+}
+
+.left-side {
+flex: 1;
+/* 左側的樣式設置 */
+padding-left: 250px;
+padding-right: -40px;
+}
+
+.right-side {
+flex: 1;
+/* 右側的樣式設置 */
+padding-left: 100px;
+}
+
+button{
+    width: 100px;
+    padding: 2px;
+    color: rgb(247,247,237);
+    border: none;
+}

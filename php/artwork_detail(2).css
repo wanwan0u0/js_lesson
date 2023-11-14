@@ -1,0 +1,42 @@
+.block{
+    background-color: rgb(185, 169, 194);
+    display: block;
+    width: 1200px;
+    height: 600px;
+    margin:50px 100px;
+    border-width:3;
+    border-style:ridge;
+}
+
+.block img{
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    flex: 0 0 auto;
+    margin:50px 0px 50px 50px;
+}
+
+
+.block text{
+    display: block;
+    width: 600px;
+    height: 600px;
+    color:rgb(0, 0, 0);
+    float:right;
+    margin:0px 0px 0px 0px;
+}
+
+.block text .text_content{
+    color:rgb(0, 0, 0);
+    margin:50px 100px 0px 0px;
+}
+
+.block text .text_block{
+    display: block;
+    background-color: aliceblue;
+    width: 450px;
+    height: 287px;
+    margin:0px;
+    border-width:3;
+    border-style:ridge;
+}
