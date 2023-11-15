@@ -1,0 +1,251 @@
+body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url('./background/Warm.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Microsoft JhengHei', 'monospace';
+
+}
+
+header {
+    border: 1px solid #fff;
+    width: 100%;
+    background: #fff;
+}
+
+h2 {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #777;
+    font-size: 1.5rem;
+}
+
+main {
+    flex: 0.85;
+    /* background-color: rgba(107, 112, 92, 0.45); */
+    background-color: rgba(255, 255, 255, .75);
+    width: 70%;
+    height: 100%;
+    position: relative;
+    border-radius: 15px;
+    margin-bottom: 35px;
+
+}
+
+article {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+/*
+section {
+    position: absolute;
+    width: calc(80% - 50px);
+    height: 13%;
+    background: #fff;
+    padding-left: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+    border-radius: 15px;
+}
+
+section:hover {
+    background: rgba(141, 138, 138, 0.137);
+}
+
+section:active {
+    background: rgba(177, 173, 173, 0.137);
+}
+*/
+
+
+footer {
+    /* flex: 0.2; */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 按鈕字體 */
+button {
+    font-family: "Microsoft JhengHei", "monospace";
+}
+
+.btn_group1, .tea_btngroup1, .tea_btngroup2 {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#tea_in {
+    background-color: rgb(240, 128, 128);
+	border-radius: 20px;
+	border: none;
+	color:white;
+	font-size: 20px;
+    width: 30%;
+    height: 50%;
+
+    /*定位對齊*/
+    position:relative;   
+    margin: auto;
+    top: 25%;
+}
+
+#tea_in:hover {
+    background-color: rgba(255, 255, 255, .75);
+    border: 3px solid rgb(240, 128, 128);
+    color: rgb(240, 128, 128);
+    
+}
+#stu_in {
+	background-color: rgb(80, 121, 198);
+	border-radius: 20px;
+	border: none;
+	color:white;
+	font-size: 20px;
+    width: 30%;
+    height: 50%;
+
+    /*定位對齊*/
+    position:relative;   
+    margin: auto;
+    top: 25%;
+	
+}
+
+#stu_in:hover {
+    background-color: rgba(255, 255, 255, .75);
+    border: 3px solid rgb(80, 121, 198);
+    color: rgb(80, 121, 198);
+    
+}
+
+/*
+#tea_logo {
+    text-align: right;
+    margin-right: 20px;
+    color: #777;
+}
+*/
+#tea_new, #tea_make_paper_btn {
+    background-color: rgb(119, 136, 153);
+	border-radius: 20px;
+	border: none;
+	color:rgb(240,248,255);
+	font-size: 20px;
+    width: 30%;
+    height: 50%;
+
+    /*定位對齊*/
+    position:relative;   
+    margin: auto;
+    top: 25%;
+}
+
+#tea_new:hover, #tea_make_paper_btn:hover {
+    background-color: rgba(255, 255, 255, .75);
+    border: 3px solid rgb(119, 136, 153);
+    color: rgb(119, 136, 153);
+    
+}
+
+#goback_btngrp1 {
+    background-color: transparent;
+    border: 0px;
+    border-style: none;
+    color: #777;
+}
+
+#tea_old , #tea_change{
+	background-color: rgb(47,79,79);
+	border-radius: 20px;
+	border: none;
+	color:rgb(240,248,255);
+	font-size: 20px;
+    width: 30%;
+    height: 50%;
+
+    /*定位對齊*/
+    position:relative;   
+    margin: auto;
+    top: 25%;
+	
+}
+
+#tea_old:hover , #tea_change:hover{
+    background-color: rgba(255, 255, 255, .75);
+    border: 3px solid rgb(47,79,79);
+    color: rgb(47,79,79);
+    
+}
+
+.new_introduce_title, .makepaper_introduce_title {
+    padding-left: 20px;
+    color: #777;
+    font-size: 1.3rem;
+}
+
+.new_introduce, .makepaper_introduce {
+    padding-left: 20px;
+    color: #555555;
+    font-size: 1.1rem;
+}
+
+.new_confirm, .makepaper_confirm {
+    background-color: #777;
+	border-radius: 15px;
+	border: none;
+	color:rgb(240,248,255);
+	font-size: 15px;
+    width: 70px;
+    height: 40px;
+
+    /*定位對齊*/
+    position:relative;   
+    margin: auto;
+    top: 25%;
+}
+
+.goto_makepaper1 {
+    background-color: #777;
+	border-radius: 15px;
+	border: none;
+	color:rgb(240,248,255);
+	font-size: 15px;
+    width: 140px;
+    height: 40px;
+}
+
+#upload_area {
+    padding-left: 20px;
+    width:95%;
+}
+
+#tea_change_page {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}

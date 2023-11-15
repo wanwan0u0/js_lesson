@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>學生端</title>
+  <script defer src="./JavaScript/main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./JavaScript/student.js"></script>
+  <!-- jQuery 库 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="student.css" type="text/css" />
+
+</head>
+
+<body>
+  <header>
+    <h2>MyAssess3</h2>
+    <!--<h3 id = "tea_logo">學生端</h3>-->
+  </header>
+
+  <nav></nav>
+
+  <main id="main">
+    <div class="btngrp2" id="btngrp2" style="text-align: center">
+      <button class="keywordrsch" id="keywordrsch" onclick="keywordrsch()">
+        關鍵字答題
+      </button>
+      <!--<button class = "tea_old" id = "tea_old" style = "margin-left: 10px;" onclick="tea_lookexam()">檢視題目</button>-->
+      <button class="quizcodersch" id="quizcodersch" style="margin-left: 10px" onclick="quizcodersch()">
+        考卷代碼答題
+      </button>
+
+
+      <!--學生查詢關鍵字-->
+    </div>
+    <div class="stu_new_page" id="stu_new_page" style="display: none">
+      <div class="container" style="width: 95%; position: absolute; top: 50px; left: 35px;">
+        <div class="row">
+          <div class="col-7">
+            <form name="form2">
+              <div class="row g-3">
+                <div class="col">
+                  <textarea class="form-control" placeholder="輸入題目關鍵字" id="floatingTextarea3" style="height: 45px"
+                    name="text2"></textarea>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+          <div class="col-4">
+            <button type="button" class="btn btn-secondary" style="width: 100%;">查詢</button>
+          </div>
+        </div>
+        <div class="tablee" id="tablee" style="width: 90%" ;>
+          <br>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">題號</th>
+                <th scope="col">關鍵字</th>
+                <th scope="col">題幹</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>a</td>
+                <td>abcd</td>
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>a</td>
+                <td>abcde</td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    </div>
+    <div class="stu_new_page2" id="stu_new_page2" style="display: none">
+      <br />
+      <div class="container">
+        <h1 class="quizcodeintro" id="quizcodeintro">輸入代碼查詢試卷</h1>
+        <input type="text" name="quizcode" id="txt_quizcode" placeholder="Eg:001">
+        <button onclick="startExam()">確認</button>
+
+      </div>
+    </div>
+
+    <div id="stu_ExamPage" style="display: none">
+      <br />
+      <div class="row" id="ExamPaper" style="padding: 30px;">
+        <div style="text-align: center;">
+          <h1 class="quizcodeintro">考卷</h1>         
+        <input type="hidden" id="ExamPaper_id"  />
+        </div>
+        <div class="ExamPaper_AnserArea" id="ExamPaper_AnserArea" style="height: 500px;overflow: auto;">
+
+          <div class="question row" style="padding-top: 100px;">
+            <div class="info col-12 row">
+              <div class="col-2" style="text-align: right;"><input type="text" class="form-control Anser" name="Anser1"
+                  qsid="Q123456" style="width: 100px; float: right;" /></div>
+              <div class="col-2">问题 1</div>
+              <div class="col-4">世界上最高的山峰是？</div>
+              <div class="col-4">
+                <video controls width="300" height="180">
+                  <source src=".\FileUpload\Q2023090025\1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div class="option col-12 row" style="padding-top: 50px;">
+              <div class="col-4"><span style="float: right;">(1)</span></div>
+              <div class="col-4">喜马拉雅山</div>
+              <div class="col-4">
+                <video controls width="300" height="180">
+                  <source src=".\FileUpload\Q2023090025\1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div class="option col-12 row" style="padding-top: 10px;">
+              <div class="col-4"><span style="float: right;">(2)</span></div>
+              <div class="col-4">珠穆朗玛峰</div>
+              <div class="col-4">影片影片影片影片影片影片影片影片影片影片</div>
+            </div>
+            <div class="option col-12 row" style="padding-top: 10px;">
+              <div class="col-4"><span style="float: right;">(3)</span></div>
+              <div class="col-4">阿尔卑斯山</div>
+              <div class="col-4">影片影片影片影片影片影片影片影片影片影片</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <hr>
+          </div>
+          <div class="question row" style="padding-top: 100px;">
+            <div class="info col-12 row">
+              <div class="col-2" style="text-align: right;"><input type="text" class="form-control Anser" name="Anser1"
+                  qsid="Q123456" style="width: 100px; float: right;" /></div>
+              <div class="col-2">问题 1</div>
+              <div class="col-4">世界上最高的山峰是？</div>
+              <div class="col-4">
+                <video controls width="300" height="180">
+                  <source src=".\FileUpload\Q2023090025\1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div class="option col-12 row" style="padding-top: 50px;">
+              <div class="col-4"><span style="float: right;">(1)</span></div>
+              <div class="col-4">喜马拉雅山</div>
+              <div class="col-4">
+                <video controls width="300" height="180">
+                  <source src=".\FileUpload\Q2023090025\1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div class="option col-12 row" style="padding-top: 10px;">
+              <div class="col-4"><span style="float: right;">(2)</span></div>
+              <div class="col-4">珠穆朗玛峰</div>
+              <div class="col-4">影片影片影片影片影片影片影片影片影片影片</div>
+            </div>
+            <div class="option col-12 row" style="padding-top: 10px;">
+              <div class="col-4"><span style="float: right;">(3)</span></div>
+              <div class="col-4">阿尔卑斯山</div>
+              <div class="col-4">影片影片影片影片影片影片影片影片影片影片</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <hr>
+          </div>
+
+
+        </div>
+        <div style="padding-top: 100px;text-align: center;">
+          <button class="btn btn-secondary" onclick="fininshExam()">交卷</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="stu_ExamResult" style="display: none">
+      <button type="button"  style="position: absolute; top: 10px; left: 10px;  background-color: transparent;
+      border: 0px;
+      border-style: none;
+      color: #777;"
+      onclick="goback_stuIndex()">
+      < 教師端首頁 </button>
+      <br />
+      <div style="text-align: center;">
+        <h1 class="quizcodeintro">考卷結果</h1>         
+      <input type="hidden" id="ExamPaper_id"  />
+      </div>
+      <div style="text-align: center;">
+        <table id="tb_ExamResult" class="table table-striped">
+            <thead>
+              <th>是否正確</th>
+              <th>填寫答案</th>
+              <th>正確答案</th>
+              <th>題目編號</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <h10>維運團隊: </h10>
+  </footer>
+</body>
+
+</html>

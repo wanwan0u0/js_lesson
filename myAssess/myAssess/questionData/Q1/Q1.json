@@ -1,0 +1,43 @@
+[{
+        "type": "meta",
+        "content-field-section-A": "100100",
+        "content-field-section-B": "10001",
+        "testing-items-system": "000",
+        "testing-items-system-illustration": null,
+        "testing-items-network": "000",
+        "testing-items-network-illustration": null,
+        "testing-items-operation": "010",
+        "testing-items-operation-illustration": null,
+        "Applicablity": "10000000",
+        "proposition": "CLW",
+        "reference": "因材網"
+    },
+    {
+        "type": "question",
+        "question-type": "word video",
+        "question-content": "請問在因材網中，如果想達到以下像SIRI一樣的對話式智慧教學，哪個選項的步驟是對的? 【因材網】",
+        "question-video": "question.mp4"
+    },
+    {
+        "type": "options",
+        "option-type": "video",
+        "option-correct": "correct.mp4",
+        "option-wrong-1": "wrong-1.mp4",
+        "option-wrong-2": "wrong-2.mp4",
+        "option-wrong-3": "wrong-3.mp4",
+        "option-correct-illustration": "",
+        "option-wrong-1-illustration": "",
+        "option-wrong-2-illustration": "",
+        "option-wrong-3-illustration": ""
+    },
+    {
+        "type": "difficulty",
+        "level": "easy",
+        "time-cost": "01000"
+    },
+    {
+        "type": "note",
+        "note-content": "如何在因材網中像SIRI一樣進行對話式的智慧教學。"
+    }
+
+]

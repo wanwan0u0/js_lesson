@@ -1,0 +1,43 @@
+[{
+        "type": "meta",
+        "content-field-section-A": "100100",
+        "content-field-section-B": "10100",
+        "testing-items-system": "000",
+        "testing-items-system-illustration": null,
+        "testing-items-network": "010",
+        "testing-items-network-illustration": null,
+        "testing-items-operation": "000",
+        "testing-items-operation-illustration": null,
+        "Applicablity": "11111111",
+        "proposition": "CPH",
+        "reference": "Microsoft Windows 10 網路連線"
+    },
+    {
+        "type": "question",
+        "question-type": "word video",
+        "question-content": "請問在Microsoft Windows 10環境下，當無線網路斷線時，再重新連線上無線網路之操作流程的影片中，哪一個步驟是多餘的? 【無線網路】",
+        "question-video": "question.mp4"
+    },
+    {
+        "type": "options",
+        "option-type": "word",
+        "option-correct": "步驟3",
+        "option-wrong-1": "步驟1",
+        "option-wrong-2": "步驟2",
+        "option-wrong-3": "步驟4",
+        "option-correct-illustration": "無須額外重新啟動飛航模式",
+        "option-wrong-1-illustration": "確認無線網路離線",
+        "option-wrong-2-illustration": "確認存在提供服務的無線網路AP",
+        "option-wrong-3-illustration": "確認已順利連線無線網路AP"
+    },
+    {
+        "type": "difficulty",
+        "level": "easy",
+        "time-cost": "00100"
+    },
+    {
+        "type": "note",
+        "note-content": "Microsoft Windows 10無線網路斷線後，重新連線的操作流程。"
+    }
+
+]

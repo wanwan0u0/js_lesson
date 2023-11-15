@@ -1,0 +1,199 @@
+/*學生*/
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: url("./background/Warm.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "Microsoft JhengHei", "monospace";
+}
+
+header {
+  border: 1px solid #fff;
+  width: 100%;
+  background: #fff;
+}
+
+h2 {
+  padding-left: 20px;
+  padding-top: 10px;
+  color: #777;
+  font-size: 1.5rem;
+}
+
+main {
+  flex: 0.85;
+  /* background-color: rgba(107, 112, 92, 0.45); */
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 70%;
+  height: 100%;
+  position: relative;
+  border-radius: 15px;
+  margin-bottom: 35px;
+}
+
+article {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-left: 25px;
+}
+
+/*
+section {
+    position: absolute;
+    width: calc(80% - 50px);
+    height: 13%;
+    background: #fff;
+    padding-left: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+    border-radius: 15px;
+}
+
+section:hover {
+    background: rgba(141, 138, 138, 0.137);
+}
+
+section:active {
+    background: rgba(177, 173, 173, 0.137);
+}
+*/
+
+footer {
+  /* flex: 0.2; */
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 按鈕字體 */
+button {
+  font-family: "Microsoft JhengHei", "monospace";
+}
+
+#btngrp2 {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#keywordrsch {
+  background-color: rgb(144, 185, 221);
+  border-radius: 20px;
+  border: none;
+  color: rgb(240, 248, 255);
+  font-size: 20px;
+  width: 30%;
+  height: 50%;
+
+  /*定位對齊*/
+  position: relative;
+  margin: auto;
+  top: 25%;
+}
+#quizcodersch {
+  background-color: rgb(73, 115, 157);
+  border-radius: 20px;
+  border: none;
+  color: rgb(240, 248, 255);
+  font-size: 20px;
+  width: 30%;
+  height: 50%;
+
+  /*定位對齊*/
+  position: relative;
+  margin: auto;
+  top: 25%;
+}
+#keywordrsch:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 3px solid rgb(144, 185, 221);
+  color: rgb(144, 185, 221);
+}
+#quizcodersch:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 3px solid rgb(73, 115, 157);
+  color: rgb(73, 115, 157);
+}
+
+.keywordintro {
+  padding-left: 20px;
+  color: #777;
+  font-size: 1.3rem;
+}
+
+.quizcodeintro {
+  padding-left: 20px;
+  color: #777;
+  font-size: 1.3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+}
+.container h1 {
+  width: 205px;
+  color: rgb(52, 47, 47);
+}
+.container input {
+  width: 260px;
+  height: 50px;
+  color: #000;
+  border: 2px solid #f0bfbf;
+  background-color: white;
+  border-radius: 25px;
+  outline: none;
+  text-indent: 15px;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.container input::placeholder {
+  color: #cfacac;
+}
+
+.container button {
+  width: 200px;
+  height: 50px;
+  color: #777;
+  border: 2px solid #1106065f;
+  background: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.container button:hover {
+  background-color: #f4e9c9;
+  color: #bc0505;
+  cursor: pointer;
+}
+#stu_new_page {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+

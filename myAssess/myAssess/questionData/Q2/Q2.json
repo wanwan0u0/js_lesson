@@ -1,0 +1,43 @@
+[{
+        "type": "meta",
+        "content-field-section-A": "100100",
+        "content-field-section-B": "10001",
+        "testing-items-system": "000",
+        "testing-items-system-illustration": null,
+        "testing-items-network": "000",
+        "testing-items-network-illustration": null,
+        "testing-items-operation": "010",
+        "testing-items-operation-illustration": null,
+        "Applicablity": "10000000",
+        "proposition": "CLW",
+        "reference": "高雄市Ｕ世代島嶼學習樂園"
+    },
+    {
+        "type": "question",
+        "question-type": "word video",
+        "question-content": "請問在高雄市Ｕ世代島嶼學習樂園中，如果要瀏覽自己的英文單字精熟的紀錄，影片中哪一個步驟是不正確的? 【E-game】",
+        "question-video": "question.mp4"
+    },
+    {
+        "type": "options",
+        "option-type": "word",
+        "option-correct": "步驟1",
+        "option-wrong-1": "步驟2",
+        "option-wrong-2": "步驟3",
+        "option-wrong-3": "所有選項皆為正確",
+        "option-correct-illustration": "先點選英文島",
+        "option-wrong-1-illustration": "點選能力曲線",
+        "option-wrong-2-illustration": "點選單字精熟",
+        "option-wrong-3-illustration": "表示裡面沒有不正確的步驟"
+    },
+    {
+        "type": "difficulty",
+        "level": "easy",
+        "time-cost": "01000"
+    },
+    {
+        "type": "note",
+        "note-content": "如何在高雄市Ｕ世代島嶼學習樂園中瀏覽自己的英文單字精熟的紀錄。"
+    }
+
+]

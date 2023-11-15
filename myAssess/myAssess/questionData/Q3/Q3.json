@@ -1,0 +1,43 @@
+[{
+        "type": "meta",
+        "content-field-section-A": "010100",
+        "content-field-section-B": "01100",
+        "testing-items-system": "000",
+        "testing-items-system-illustration": null,
+        "testing-items-network": "000",
+        "testing-items-network-illustration": null,
+        "testing-items-operation": "010",
+        "testing-items-operation-illustration": null,
+        "Applicablity": "11111111",
+        "proposition": "CPH",
+        "reference": "Google Meet"
+    },
+    {
+        "type": "question",
+        "question-type": "word",
+        "question-content": "請問哪一部影片為正確的Google Meet分享桌面之操作流程? 【遠距視訊】",
+        "question-video": null
+    },
+    {
+        "type": "options",
+        "option-type": "video",
+        "option-correct": "correct.mp4",
+        "option-wrong-1": "wrong-1.mp4",
+        "option-wrong-2": "wrong-2.mp4",
+        "option-wrong-3": "wrong-3.mp4",
+        "option-correct-illustration": null,
+        "option-wrong-1-illustration": "舉手",
+        "option-wrong-2-illustration": "關閉麥克風",
+        "option-wrong-3-illustration": "關閉攝影機"
+    },
+    {
+        "type": "difficulty",
+        "level": "easy",
+        "time-cost": "00100"
+    },
+    {
+        "type": "note",
+        "note-content": "Google Meet分享桌面之操作流程。"
+    }
+
+]
